@@ -26,6 +26,16 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <soup.neumorphism.NeumorphFloatingActionButton
+                android:id="@+id/neumorphFloatingActionButton"
+                style="@style/Widget.Neumorph.FloatingActionButton"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:scaleType="center"
+                android:src="@drawable/ic_android_black_24dp"
+                app:neumorph_shapeType="flat" />
+
             <soup.neumorphism.NeumorphCardView
                 style="@style/Widget.Neumorph.CardView"
                 android:layout_width="match_parent"
@@ -39,43 +49,57 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
                     android:background="@android:color/transparent"
+                    android:fontFamily="@font/early_tickertape"
                     android:textColor="#000"
-                    android:textCursorDrawable="@drawable/cursor" />
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="34sp" />
             </soup.neumorphism.NeumorphCardView>
 
             <soup.neumorphism.NeumorphCardView
                 style="@style/Widget.Neumorph.CardView"
-                android:layout_width="match_parent"
+                android:layout_width="256dp"
                 android:layout_height="80dp"
                 android:layout_margin="20dp"
                 app:neumorph_shapeType="pressed">
 
                 <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:background="@android:color/transparent"
-                    android:textColor="#000"
-                    android:textCursorDrawable="@drawable/cursor"/>
-            </soup.neumorphism.NeumorphCardView>
-
-            <soup.neumorphism.NeumorphCardView
-                style="@style/Widget.Neumorph.CardView"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_margin="20dp"
-                app:neumorph_shapeType="basin">
-
-                <EditText
-                    android:layout_width="match_parent"
+                    android:layout_width="221dp"
                     android:layout_height="match_parent"
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
                     android:background="@android:color/transparent"
                     android:textColor="#000"
                     android:textCursorDrawable="@drawable/cursor" />
+
             </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="138dp"
+                android:layout_height="120dp"
+                android:layout_margin="20dp"
+                app:neumorph_shapeType="basin">
+
+                <!--                <EditText-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="match_parent"-->
+                <!--                    android:layout_marginStart="10dp"-->
+                <!--                    android:layout_marginEnd="10dp"-->
+                <!--                    android:background="@android:color/transparent"-->
+                <!--                    android:textColor="#000"-->
+                <!--                    android:textCursorDrawable="@drawable/cursor" />-->
+
+                <soup.neumorphism.NeumorphButton
+                    android:id="@+id/neumorphButton"
+                    style="@style/Widget.Neumorph.Button"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Button"
+                    android:textColor="#000"
+                    app:neumorph_shapeType="flat" />
+            </soup.neumorphism.NeumorphCardView>
+
 
             <soup.neumorphism.NeumorphTextView
                 android:layout_width="wrap_content"
@@ -83,26 +107,19 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
+                android:fontFamily="@font/early_tickertape"
                 android:text="Hello World"
                 android:textAlignment="center"
-                android:textColor="@color/colorPrimary"
-                android:textSize="30sp" />
-
-
-            <soup.neumorphism.NeumorphButton
-                style="@style/Widget.Neumorph.Button"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Button"
-                android:textColor="#000"
-                app:neumorph_shapeType="flat" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#000000"
+                android:textSize="64sp" />
 
             <soup.neumorphism.NeumorphButton
                 style="@style/Widget.Neumorph.Button"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:fontFamily="@font/early_tickertape"
                 android:text="Button 2"
                 android:textColor="#000"
                 app:neumorph_shapeType="pressed" />
@@ -118,17 +135,8 @@
 
             <soup.neumorphism.NeumorphFloatingActionButton
                 style="@style/Widget.Neumorph.FloatingActionButton"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:scaleType="center"
-                android:src="@drawable/ic_android_black_24dp"
-                app:neumorph_shapeType="flat" />
-
-            <soup.neumorphism.NeumorphFloatingActionButton
-                style="@style/Widget.Neumorph.FloatingActionButton"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
                 android:layout_gravity="center"
                 android:scaleType="center"
                 android:src="@drawable/ic_android_black_24dp"
@@ -142,6 +150,15 @@
                 android:scaleType="center"
                 android:src="@drawable/ic_android_black_24dp"
                 app:neumorph_shapeType="basin" />
+
+            <soup.neumorphism.NeumorphFloatingActionButton
+                style="@style/Widget.Neumorph.FloatingActionButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:scaleType="center"
+                android:src="@drawable/ic_android_black_24dp"
+                app:neumorph_shapeType="flat" />
 
         </LinearLayout>
 
